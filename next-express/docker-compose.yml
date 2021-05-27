@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  app:
+    # build:
+    #   context: ./app
+    image: node:16
+    working_dir: /app
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    tty: true
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    # command: npm run dev
+  server:
+    image: node:16
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    ports:
+      - "${SERVER_PORT}:${SERVER_PORT}"
+    tty: true
+    env_file:
+      - .env
+    # command: npm run dev

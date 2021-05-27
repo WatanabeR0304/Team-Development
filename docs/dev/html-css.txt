@@ -1,0 +1,33 @@
+# HTML\CSS
+
+## HTML構造
+- SEOを考慮
+
+## 命名規則
+- ケバブケース
+- module名-内容
+  - .header-title
+  - .header-bar
+  - .footer-copyright
+
+## フォルダ構成
+SMACSSに準拠する
+- css
+  - style.css
+- scss
+  - base\
+    - _base.scss
+  - module\
+    - _header.scss
+  - style.scss
+
+
+## セレクタ
+- アルファベット順
+
+## プロパティ
+1. positioning
+1. display & box model
+1. color
+1. text
+1. other
