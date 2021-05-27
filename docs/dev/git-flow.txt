@@ -1,0 +1,19 @@
+# git流れ
+
+## 1度だけする作業
+1. 代表者のリポジトリをforkする
+1. <自分の名前>/<リポジトリ名>になっていることを確認したら、developmentブランチをローカルにcloneする
+1. upstreamという名前で代表者のリポジトリを登録する
+
+## 開発の度に繰り返す作業
+1. issueとMilestoneを確認する
+1. developmentブランチから、dev_<作業内容>ブランチを作成する
+1. キリの良いタイミングでaddとcommitを行う。<コメント> <#番号>でissueと関連付けを行う
+
+## 開発が完了したら
+1. developmentブランチに移動して、dev_<作業内容>をmergeする
+1. dev_<作業内容>ブランチを削除する
+1. developmentブランチをpushする
+1. development -> master に <作業内容> -> masterというコメントでpull requestする
+1. <自分の名前>/master -> <代表者の名前>/developmentにpull requestsする
+1. 代表者のリポジトリに変更があればupstreamからpullする
