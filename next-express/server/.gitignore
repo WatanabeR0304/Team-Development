@@ -1,0 +1,5 @@
+/node_modules
+
+# 追加していないファイルが表示される不具合
+$SERVER_PORT
+${SERVER_PORT}
